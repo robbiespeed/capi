@@ -1,5 +1,5 @@
 # Capi
-A simple computed property library for JS, built with typescript.
+A simple JS state managment library built with TypeScript.
 
 Capi aims to be:
 - minimal
