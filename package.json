@@ -1,20 +1,23 @@
 {
   "name": "capi",
-  "version": "0.0.1",
-  "description": "Simple computed property library",
+  "version": "0.0.2",
+  "description": "",
   "main": "lib/capi.js",
   "scripts": {
-    "build": "./node_modules/typescript/bin/tsc",
-    "test": "./node_modules/mocha/bin/mocha built/tests"
+    "build": "tsc",
+    "test": "mocha build/**/*.spec.js",
+    "build-watch": "tsc --watch",
+    "test-watch": "mocha --watch build/**/*.spec.js",
+    "lint": "tslint -p tsconfig.json"
   },
   "author": "Robbie Speed",
   "license": "ISC",
   "devDependencies": {
-    "@types/chai": "^3.4.34",
-    "@types/mocha": "^2.2.32",
-    "chai": "^3.5.0",
-    "mocha": "^3.1.2",
-    "tslint": "^3.15.1",
-    "typescript": "^2.0.6"
+    "@types/chai": "^4.0.4",
+    "@types/mocha": "^2.2.44",
+    "chai": "^4.1.2",
+    "mocha": "^4.0.1",
+    "tslint": "^5.8.0",
+    "typescript": "^2.6.1"
   }
 }
